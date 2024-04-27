@@ -3,45 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Carnivore Recipes</title>
   </head>
   <body>
-    <header>
-      <h1>
-        Hello there! Are we hungry?.... <br />
-        Then WELCOME to the Carnivore recipe generator.
-      </h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Carnivore Recipe Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input type="text" placeholder="What type of meat do you wanna use?" />
-        <input type="submit" placeholder="get recipe" />
-      </form>
-      <div>
-        Recipe will be here
-        <br />
-        Ingredients: - Instructions:
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="What type of meat do you wanna use?"
+            class="instructions"
+          />
+          <input type="submit" placeholder="get recipe" class="submit-button" />
+        </form>
+        <div class="recipe-text">
+          Recipe will be here
+          <br />
+          Ingredients: - Instructions:
+        </div>
+      </main>
 
-    <footer>
-      This project was coded with 🤍 by
-      <a href="https://github.com/SimonaKatarina" target="_blank"
-        >Simona Katarína Hlinka</a
-      >
-      , open sourced on
-      <a
-        href="https://github.com/SimonaKatarina/carnivore-recipe-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      & hosted on
-      <a href="https://carnivore-recipe-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+      <footer>
+        This project was coded with 🤍 by
+        <a href="https://github.com/SimonaKatarina" target="_blank"
+          >Simona Katarína Hlinka</a
+        >
+        , open sourced on
+        <a
+          href="https://github.com/SimonaKatarina/carnivore-recipe-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        & hosted on
+        <a
+          href="https://carnivore-recipe-generator.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
