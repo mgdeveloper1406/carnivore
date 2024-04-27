@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="What type of meat do you wanna use?"
@@ -27,11 +28,7 @@
           />
           <input type="submit" placeholder="get recipe" class="submit-button" />
         </form>
-        <div class="recipe-text">
-          Recipe will be here
-          <br />
-          Ingredients: - Instructions:
-        </div>
+        <div class="recipe-text" id="recipe"></div>
       </main>
 
       <footer>
