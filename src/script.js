@@ -17,6 +17,9 @@ let userInput=document.querySelector("#user-input");
     let context="You are a cook who likes to create recipes for a carnivore diet. Your mission is to provide full recipes in basic HTML format with a list of ingredients needed and steps to make the food. Make sure to use the user input.";
     let apiUrl=`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let recipeElement= document.querySelector("#recipe");
+recipeElement.classList.remove("hidden");
+recipeElement.innerHTML=`<div class="blink">Generating recipe for ${userInput.value}...</div>`;
 
 axios.get(apiUrl).then(displayRecipe);
 }

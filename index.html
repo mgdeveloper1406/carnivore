@@ -21,16 +21,23 @@
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="What type of meat do you wanna use?"
-            class="instructions"
-            id="user-input"
-          />
-          <input type="submit" placeholder="get recipe" class="submit-button" />
-        </form>
-        <div class="recipe-text" id="recipe"></div>
+        <div class="example-input">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="What type of meat do you wanna use?"
+              class="instructions"
+              id="user-input"
+            />
+            <input
+              type="submit"
+              placeholder="get recipe"
+              class="submit-button"
+            />
+          </form>
+          <div class="hint">ex: Minced beef, Rib eye steak, Chicken...</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
 
       <footer>
